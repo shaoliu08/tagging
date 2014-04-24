@@ -24,5 +24,4 @@ func main() {
 		rest.RouteObjectMethod("DELETE", "/api/tagformats/:tag", &api, "DeleteTagFormatByTag"),
 	)
 	http.ListenAndServe(":8080", &handler)
-	log.Print("the end")
 }
